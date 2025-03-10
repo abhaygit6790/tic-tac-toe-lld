@@ -5,8 +5,8 @@ type Player struct {
 	Piece PlayingPiece
 }
 
-func NewPlayer(name string, piece PlayingPiece) *Player {
-	return &Player{
+func NewPlayer(name string, piece PlayingPiece) Player {
+	return Player{
 		Name:  name,
 		Piece: piece,
 	}
